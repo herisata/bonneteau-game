@@ -1,4 +1,17 @@
+.parent {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-direction: column;
+  align-self: stretch;
+}
+
 .main {
-    flex: 1;
-    flex-direction: 'row';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.button {
+  align-self: center;
 }
