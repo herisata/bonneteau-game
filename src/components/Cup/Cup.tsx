@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import Ball from '../Ball/Ball';
 
 interface Props {
   showBall?: boolean;
@@ -7,7 +8,12 @@ interface Props {
 }
 
 const Cup: React.FC<Props> = ({ showBall, onCupClick }: Props) => {
-  return <div onClick={onCupClick}>Cup {showBall && 'ball'}</div>;
+  return (
+    <div className="cup-with-ball">
+      <div className="cup" onClick={onCupClick} />
+      {showBall && <Ball />}
+    </div>
+  );
 };
 
 export default Cup;
