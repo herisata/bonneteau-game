@@ -15,3 +15,9 @@
 .button {
   align-self: center;
 }
+.txt-win {
+  color: #0f0;
+}
+.txt-loss {
+  color: #f00;
+}

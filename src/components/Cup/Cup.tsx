@@ -1,10 +1,13 @@
 import React from 'react';
 import './styles.css';
 
-interface Props {}
+interface Props {
+  showBall?: boolean;
+  onCupClick?(): void;
+}
 
-const Cup: React.FC<Props> = () => {
-  return <div>Cup</div>;
+const Cup: React.FC<Props> = ({ showBall, onCupClick }: Props) => {
+  return <div onClick={onCupClick}>Cup {showBall && 'ball'}</div>;
 };
 
 export default Cup;
